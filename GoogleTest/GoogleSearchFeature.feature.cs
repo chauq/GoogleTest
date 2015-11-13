@@ -89,6 +89,32 @@ testRunner.Then("Search items shows the items related to SpecFlow", ((string)(nu
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verify the SpecFlow can fail")]
+        public virtual void VerifyTheSpecFlowCanFail()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the SpecFlow can fail", ((string[])(null)));
+#line 12
+this.ScenarioSetup(scenarioInfo);
+#line 13
+testRunner.Given("I navigate to the page \"www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 14
+testRunner.And("I see the page is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Keyword"});
+            table2.AddRow(new string[] {
+                        "Fail"});
+#line 15
+testRunner.When("I enter Search Keyword in the Search Text box", ((string)(null)), table2, "When ");
+#line 18
+testRunner.And("I click on Search Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 19
+testRunner.Then("Search items shows the items related to SpecFlow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
