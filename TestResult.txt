@@ -1,0 +1,14 @@
+***** GoogleTest.GoogleSearchFeature.VerifyTheSearchFunctionalityOfGoogleSearchPage
+Given I navigate to the page "www.google.com"
+-> done: GoogleSearchFeatureSteps.GivenINavigateToThePage("www.google.com") (0.4s)
+And I see the page is loaded
+-> done: GoogleSearchFeatureSteps.GivenISeeThePageIsLoaded() (0.2s)
+When I enter Search Keyword in the Search Text box
+  --- table step argument ---
+  | Keyword  |
+  | SpecFlow |
+-> done: GoogleSearchFeatureSteps.WhenIEnterSearchKeywordInTheSearchTextBox(<table>) (0.2s)
+And I click on Search Button
+-> done: GoogleSearchFeatureSteps.WhenIClickOnSearchButton() (0.1s)
+Then Search items shows the items related to SpecFlow
+-> done: GoogleSearchFeatureSteps.ThenSearchItemsShowsTheItemsRelatedToSpecFlow() (0.6s)
