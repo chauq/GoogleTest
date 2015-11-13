@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-11-13" time="13:18:27">
-  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8662" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="F:\git\GoogleTest" machine-name="DESKTOP-CTCDPAK" user="ChauQ" user-domain="DESKTOP-CTCDPAK" />
+<test-results name="F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-11-13" time="16:42:07">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8662" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="F:\git\GoogleTest\GoogleTest" machine-name="DESKTOP-CTCDPAK" user="ChauQ" user-domain="DESKTOP-CTCDPAK" />
   <culture-info current-culture="en-GB" current-uiculture="en-GB" />
-  <test-suite type="Assembly" name="F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll" executed="True" result="Success" success="True" time="8.542" asserts="0">
+  <test-suite type="Assembly" name="F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll" executed="True" result="Success" success="True" time="6.680" asserts="0">
     <results>
-      <test-suite type="Namespace" name="GoogleTest" executed="True" result="Success" success="True" time="8.535" asserts="0">
+      <test-suite type="Namespace" name="GoogleTest" executed="True" result="Success" success="True" time="6.673" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="GoogleSearchFeature" description="GoogleSearch" executed="True" result="Success" success="True" time="8.534" asserts="0">
+          <test-suite type="TestFixture" name="GoogleSearchFeature" description="GoogleSearch" executed="True" result="Success" success="True" time="6.672" asserts="0">
             <results>
-              <test-case name="GoogleTest.GoogleSearchFeature.VerifyTheSearchFunctionalityOfGoogleSearchPage" description="Verify the search Functionality of Google Search page" executed="True" result="Success" success="True" time="8.271" asserts="0" />
+              <test-case name="GoogleTest.GoogleSearchFeature.VerifyTheSearchFunctionalityOfGoogleSearchPage" description="Verify the search Functionality of Google Search page" executed="True" result="Success" success="True" time="6.420" asserts="0" />
             </results>
           </test-suite>
         </results>
