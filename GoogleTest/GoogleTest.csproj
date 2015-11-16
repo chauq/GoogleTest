@@ -67,21 +67,24 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="GoogleSearchFeature.feature.cs">
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebTests\Features\GoogleSearchFeature.feature.cs" />
+    <Compile Include="WebTests\Features\GoogleSearchFeature1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GoogleSearchFeature.feature</DependentUpon>
     </Compile>
-    <Compile Include="GoogleSearchFeatureSteps.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebTests\Steps\GoogleSearchFeatureSteps.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="GoogleSearchFeature.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>GoogleSearchFeature.feature.cs</LastGenOutput>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+    <None Include="WebTests\Features\GoogleSearchFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GoogleSearchFeature1.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\packages\Selenium.WebDriver.IEDriver64.2.48.0.1\driver\IEDriverServer64.exe">
@@ -99,6 +102,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="README-IEDriver64.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebTests\Code\" />
+    <Folder Include="WebTests\Pages\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
