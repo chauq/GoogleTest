@@ -91,10 +91,10 @@ testRunner.Then("Search items shows the items related to SpecFlow", ((string)(nu
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify the SpecFlow can pass")]
-        public virtual void VerifyTheSpecFlowCanPass()
+        [NUnit.Framework.DescriptionAttribute("Verify the SpecFlow can fail")]
+        public virtual void VerifyTheSpecFlowCanFail()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the SpecFlow can pass", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the SpecFlow can fail", ((string[])(null)));
 #line 12
 this.ScenarioSetup(scenarioInfo);
 #line 13
@@ -105,7 +105,7 @@ testRunner.And("I see the page is loaded", ((string)(null)), ((TechTalk.SpecFlow
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "Keyword"});
             table2.AddRow(new string[] {
-                        "SpecFlow"});
+                        "fail"});
 #line 15
 testRunner.When("I enter Search Keyword in the Search Text box", ((string)(null)), table2, "When ");
 #line 18
