@@ -1,64 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll" total="2" errors="2" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-11-13" time="17:56:22">
+<test-results name="F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-11-16" time="10:25:07">
   <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8669" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="F:\git\GoogleTest\GoogleTest" machine-name="DESKTOP-CTCDPAK" user="ChauQ" user-domain="DESKTOP-CTCDPAK" />
   <culture-info current-culture="en-GB" current-uiculture="en-GB" />
-  <test-suite type="Assembly" name="F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll" executed="True" result="Failure" success="False" time="3.722" asserts="0">
+  <test-suite type="Assembly" name="F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll" executed="True" result="Success" success="True" time="10.726" asserts="0">
     <results>
-      <test-suite type="Namespace" name="GoogleTest" executed="True" result="Failure" success="False" time="3.715" asserts="0">
+      <test-suite type="Namespace" name="GoogleTest" executed="True" result="Success" success="True" time="10.720" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="GoogleSearchFeature" description="GoogleSearch" executed="True" result="Failure" success="False" time="3.715" asserts="0">
+          <test-suite type="TestFixture" name="GoogleSearchFeature" description="GoogleSearch" executed="True" result="Success" success="True" time="10.719" asserts="0">
             <results>
-              <test-case name="GoogleTest.GoogleSearchFeature.VerifyTheSearchFunctionalityOfGoogleSearchPage" description="Verify the search Functionality of Google Search page" executed="True" result="Error" success="False" time="1.935" asserts="0">
-                <failure>
-                  <message><![CDATA[System.InvalidOperationException : unknown error: unrecognized Blink revision: e8926f681fbb840b4f389e7e692343d4505722ce
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.3 x86_64)
-TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
-                  <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
-at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
-at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)
-at GoogleTest.GoogleSearchFeatureSteps.InitScenario() in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeatureSteps.cs:line 22
-at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
-at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
-at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart(ScenarioInfo scenarioInfo)
-at GoogleTest.GoogleSearchFeature.ScenarioSetup(ScenarioInfo scenarioInfo) in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeature.feature.cs:line 0
-at GoogleTest.GoogleSearchFeature.VerifyTheSearchFunctionalityOfGoogleSearchPage() in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeature.feature:line 3
---TearDown
-at GoogleTest.GoogleSearchFeatureSteps.TearDownScenario() in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeatureSteps.cs:line 28
-at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
-at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
-at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
-at GoogleTest.GoogleSearchFeature.ScenarioTearDown() in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeature.feature.cs:line 0
-]]></stack-trace>
-                </failure>
-              </test-case>
-              <test-case name="GoogleTest.GoogleSearchFeature.VerifyTheSpecFlowCanFail" description="Verify the SpecFlow can fail" executed="True" result="Error" success="False" time="1.436" asserts="0">
-                <failure>
-                  <message><![CDATA[System.InvalidOperationException : unknown error: unrecognized Blink revision: e8926f681fbb840b4f389e7e692343d4505722ce
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.3 x86_64)
-TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
-                  <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
-at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
-at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)
-at GoogleTest.GoogleSearchFeatureSteps.InitScenario() in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeatureSteps.cs:line 22
-at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
-at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
-at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart(ScenarioInfo scenarioInfo)
-at GoogleTest.GoogleSearchFeature.ScenarioSetup(ScenarioInfo scenarioInfo) in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeature.feature.cs:line 0
-at GoogleTest.GoogleSearchFeature.VerifyTheSpecFlowCanFail() in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeature.feature:line 12
---TearDown
-at GoogleTest.GoogleSearchFeatureSteps.TearDownScenario() in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeatureSteps.cs:line 28
-at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
-at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
-at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
-at GoogleTest.GoogleSearchFeature.ScenarioTearDown() in f:\git\GoogleTest\GoogleTest\GoogleTest\GoogleSearchFeature.feature.cs:line 0
-]]></stack-trace>
-                </failure>
-              </test-case>
+              <test-case name="GoogleTest.GoogleSearchFeature.VerifyTheSearchFunctionalityOfGoogleSearchPage" description="Verify the search Functionality of Google Search page" executed="True" result="Success" success="True" time="6.116" asserts="0" />
+              <test-case name="GoogleTest.GoogleSearchFeature.VerifyTheSpecFlowCanPass" description="Verify the SpecFlow can pass" executed="True" result="Success" success="True" time="4.372" asserts="0" />
             </results>
           </test-suite>
         </results>
