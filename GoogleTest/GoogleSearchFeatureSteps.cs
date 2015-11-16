@@ -6,6 +6,8 @@ using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.IE;
 using OpenQA.Selenium;
 
 namespace GoogleTest
@@ -18,7 +20,10 @@ namespace GoogleTest
         [BeforeScenario]
         public void InitScenario()
         {
-            driver = new FirefoxDriver();
+            FirefoxOptions options = new FirefoxOptions();
+            var profile = new FirefoxProfile();
+            var binary = new FirefoxBinary(@"C:\Program Files (x86)\Mozilla Firefox\firefox.exe");
+            driver = new FirefoxDriver(binary, profile);
         }
 
         [AfterScenario]
