@@ -41,6 +41,7 @@ namespace GoogleTest.WebTests.Steps
         public void ThenIShouldGetTheFindFlightsPage()
         {
             _findFlightsPage = PageFactory.CreateFlightsPage(_context);
+            Assert.IsTrue(_findFlightsPage.HasBodyText, "Unable to find the text on the Find Flights page.");
         }
 
         [AfterScenario]
