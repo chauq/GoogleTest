@@ -66,25 +66,27 @@ namespace GoogleTest.WebTests.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify the search Functionality of Google Search page")]
+        [NUnit.Framework.CategoryAttribute("google")]
         public virtual void VerifyTheSearchFunctionalityOfGoogleSearchPage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the search Functionality of Google Search page", ((string[])(null)));
-#line 3
-this.ScenarioSetup(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the search Functionality of Google Search page", new string[] {
+                        "google"});
 #line 4
-testRunner.Given("I navigate to the page \"www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 5
+testRunner.Given("I navigate to the page \"www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 6
 testRunner.And("I see the page is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Keyword"});
             table1.AddRow(new string[] {
                         "SpecFlow"});
-#line 6
+#line 7
 testRunner.When("I enter Search Keyword in the Search Text box", ((string)(null)), table1, "When ");
-#line 9
-testRunner.And("I click on Search Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
+testRunner.And("I click on Search Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
 testRunner.Then("Search items shows the items related to SpecFlow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -92,25 +94,27 @@ testRunner.Then("Search items shows the items related to SpecFlow", ((string)(nu
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify the SpecFlow can fail")]
+        [NUnit.Framework.CategoryAttribute("google")]
         public virtual void VerifyTheSpecFlowCanFail()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the SpecFlow can fail", ((string[])(null)));
-#line 12
-this.ScenarioSetup(scenarioInfo);
-#line 13
-testRunner.Given("I navigate to the page \"www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the SpecFlow can fail", new string[] {
+                        "google"});
 #line 14
+this.ScenarioSetup(scenarioInfo);
+#line 15
+testRunner.Given("I navigate to the page \"www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
 testRunner.And("I see the page is loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "Keyword"});
             table2.AddRow(new string[] {
                         "fail"});
-#line 15
+#line 17
 testRunner.When("I enter Search Keyword in the Search Text box", ((string)(null)), table2, "When ");
-#line 18
+#line 20
 testRunner.And("I click on Search Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 19
+#line 21
 testRunner.Then("Search items shows the items related to SpecFlow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

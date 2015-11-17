@@ -17,7 +17,7 @@ namespace GoogleTest
     {
         private IWebDriver driver;
 
-        [BeforeScenario]
+        [BeforeScenario("@google")]
         public void InitScenario()
         {
             FirefoxOptions options = new FirefoxOptions();
@@ -26,7 +26,7 @@ namespace GoogleTest
             driver = new FirefoxDriver(binary, profile);
         }
 
-        [AfterScenario]
+        [AfterScenario("@google")]
         public void TearDownScenario()
         {
             driver.Dispose();
