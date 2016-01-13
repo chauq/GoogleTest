@@ -12,7 +12,7 @@ namespace GoogleTest.WebTests.Code
 {
     public static class PageFactory {
 
-        public static LoginPage CreateHomepage(WebTestContext context)
+        public static LoginPage CreateLoginPage(WebTestContext context)
         {
             return new LoginPage(context.Driver);
         }
@@ -20,6 +20,11 @@ namespace GoogleTest.WebTests.Code
         public static FindFlightsPage CreateFlightsPage(WebTestContext context)
         {
             return new FindFlightsPage(context.Driver);
+        }
+
+        public static HomePage CreateHomePage(WebTestContext context)
+        {
+            return new HomePage(context.Driver);
         }
     }
 }

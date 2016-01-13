@@ -16,7 +16,7 @@ namespace GoogleTest.WebTests.Steps
         public PageObjectSteps(WebTestContext context)
         {
             _context = context;
-            _loginPage = PageFactory.CreateHomepage(context);
+            _loginPage = PageFactory.CreateLoginPage(context);
             _findFlightsPage = PageFactory.CreateFlightsPage(context);
         }
 
@@ -27,7 +27,7 @@ namespace GoogleTest.WebTests.Steps
         [Given(@"I go to the Test page")]
         public void GivenIGoToTheTestPage()
         {
-            _loginPage = PageFactory.CreateHomepage(_context);
+            _loginPage = PageFactory.CreateLoginPage(_context);
             _loginPage.Driver.Navigate().GoToUrl("http://newtours.demoaut.com");
         }
 
