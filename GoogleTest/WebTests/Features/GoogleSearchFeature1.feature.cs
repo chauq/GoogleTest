@@ -94,10 +94,12 @@ testRunner.Then("Search items shows the items related to SpecFlow", ((string)(nu
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify the SpecFlow can fail")]
+        [NUnit.Framework.IgnoreAttribute()]
         [NUnit.Framework.CategoryAttribute("google")]
         public virtual void VerifyTheSpecFlowCanFail()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the SpecFlow can fail", new string[] {
+                        "ignore",
                         "google"});
 #line 14
 this.ScenarioSetup(scenarioInfo);

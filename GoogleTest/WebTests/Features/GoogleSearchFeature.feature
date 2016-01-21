@@ -10,7 +10,7 @@ When I enter Search Keyword in the Search Text box
 And I click on Search Button
 Then Search items shows the items related to SpecFlow
 
-@google
+@ignore @google
 Scenario: Verify the SpecFlow can fail
 Given I navigate to the page "www.google.com"
 And I see the page is loaded
