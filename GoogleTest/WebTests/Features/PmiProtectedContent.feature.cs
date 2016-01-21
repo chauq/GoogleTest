@@ -32,8 +32,15 @@ namespace GoogleTest.WebTests.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Pmi protected content", "As a user, when you go to a protected page, then I should only see some text and " +
-                    "not see the protected contact", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Pmi protected content", @"As a Content Editor
+I want to be able to restrict access to content, excluding reference articles
+So that I can control the benefits of becoming a Registered User or a Member, 
+constructing rules such as “Member only if within 90 days of Publication Date, else Registered User only"".
+
+As a User 
+When I go to a protected item page, then I should only see a page with a 403 : Access is Denied message
+When I go to a protected content page, then I should only see some Abstract text from the content 
+and not see the main protected content itself.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,17 +73,17 @@ namespace GoogleTest.WebTests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("As a user, I should see a 403 message if I go to the protected item test")]
-        public virtual void AsAUserIShouldSeeA403MessageIfIGoToTheProtectedItemTest()
+        [NUnit.Framework.DescriptionAttribute("As a user, I should see a 403 message if I go to the protected item test page")]
+        public virtual void AsAUserIShouldSeeA403MessageIfIGoToTheProtectedItemTestPage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a user, I should see a 403 message if I go to the protected item test", ((string[])(null)));
-#line 4
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a user, I should see a 403 message if I go to the protected item test page", ((string[])(null)));
+#line 12
 this.ScenarioSetup(scenarioInfo);
-#line 5
+#line 13
  testRunner.Given("I am on the Pmi home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
+#line 14
  testRunner.When("I go to the a protected item page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 7
+#line 15
  testRunner.Then("I should see a page with the message that Access is Denied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

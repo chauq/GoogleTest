@@ -32,7 +32,7 @@ namespace GoogleTest.WebTests.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Pmi Homepage", "As a user, when you go to the homepage, then I should see some text", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Pmi Homepage", "As a User \r\nwhen you go to the homepage, then I should see some text", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -69,11 +69,11 @@ namespace GoogleTest.WebTests.Features
         public virtual void AsAUserIShouldSeeSomeBodyText()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a user, I should see some body text", ((string[])(null)));
-#line 4
-this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.Given("I am on the Pmi home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 6
+ testRunner.Given("I am on the Pmi home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 7
  testRunner.Then("I should get some body text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
