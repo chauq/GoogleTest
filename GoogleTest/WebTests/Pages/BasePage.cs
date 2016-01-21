@@ -13,6 +13,7 @@ namespace GoogleTest.WebTests.Pages
 {
     public class BasePage {
         private IWebDriver _driver = null;
+        private string _configTemplateName;
 
         public IWebDriver Driver { get { return _driver; } }
 
@@ -21,10 +22,27 @@ namespace GoogleTest.WebTests.Pages
             _driver = driver;
         }
 
+        public BasePage(IWebDriver driver, Type pageType)
+        {
+            _configTemplateName = pageType.Name;
+            _driver = driver;
+        }
+
+        public BasePage(IWebDriver driver, string configTemplateName)
+        {
+            _configTemplateName = configTemplateName;
+            _driver = driver;
+        }
+
         internal void Hilight(IWebElement element)
         {
             IJavaScriptExecutor js = Driver as IJavaScriptExecutor;
             js.ExecuteScript("arguments[0].style.border='3px solid red'", element);
+        }
+
+        internal bool IsPageNotFound()
+        {
+            return Driver.PageSource.Contains("Page not found");
         }
     }
 }

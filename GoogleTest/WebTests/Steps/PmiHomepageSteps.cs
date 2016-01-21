@@ -20,13 +20,6 @@ namespace GoogleTest.WebTests.Steps {
 
         private WebTestContext _context = null;
         private HomePage _homePage = null;
-
-        [Given(@"I am on the Pmi home page")]
-        public void GivenIAmOnThePmiHomePage()
-        {
-            _homePage = PageFactory.CreateHomePage(_context);
-            _homePage.Driver.Navigate().GoToUrl("http://pmi-refresh.durabledigital.com/");
-        }
         
         [Then(@"I should get some body text")]
         public void ThenIShouldGetSomeBodyText()

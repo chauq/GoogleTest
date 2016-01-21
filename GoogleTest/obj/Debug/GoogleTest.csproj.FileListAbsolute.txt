@@ -1,3 +1,7 @@
+F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\IEDriverServer64.exe
+F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\chromedriver.exe
+F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\chromedriver-license.txt
+F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\IEDriverServer.exe
 F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll.config
 F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.dll
 F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\GoogleTest.pdb
@@ -11,7 +15,3 @@ F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\WebDriver.Support.xml
 F:\git\GoogleTest\GoogleTest\GoogleTest\obj\Debug\GoogleTest.csprojResolveAssemblyReference.cache
 F:\git\GoogleTest\GoogleTest\GoogleTest\obj\Debug\GoogleTest.dll
 F:\git\GoogleTest\GoogleTest\GoogleTest\obj\Debug\GoogleTest.pdb
-F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\chromedriver.exe
-F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\chromedriver-license.txt
-F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\IEDriverServer64.exe
-F:\git\GoogleTest\GoogleTest\GoogleTest\bin\Debug\IEDriverServer.exe

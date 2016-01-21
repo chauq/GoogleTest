@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
@@ -67,6 +68,14 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="WebTests\Code\SystemUnderTest.cs" />
+    <Compile Include="WebTests\Pages\ProtectedContentPage.cs" />
+    <Compile Include="WebTests\Steps\PmiProtectedContentSteps.cs" />
+    <Compile Include="WebTests\Features\PmiProtectedContent.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PmiProtectedContent.feature</DependentUpon>
+    </Compile>
     <Compile Include="WebTests\Steps\PmiHomepageSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebTests\Code\PageFactory.cs" />
@@ -92,6 +101,7 @@
     <Compile Include="WebTests\Pages\LoginPage.cs" />
     <Compile Include="WebTests\Steps\GoogleSearchFeatureSteps.cs" />
     <Compile Include="WebTests\Steps\PageObjectSteps.cs" />
+    <Compile Include="WebTests\Steps\NavigationSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -109,6 +119,10 @@
     <None Include="WebTests\Features\PmiHomepage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PmiHomepage.feature.cs</LastGenOutput>
+    </None>
+    <None Include="WebTests\Features\PmiProtectedContent.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PmiProtectedContent.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
