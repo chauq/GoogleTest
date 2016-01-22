@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="WebTests\Code\SystemUnderTest.cs" />
     <Compile Include="WebTests\Pages\ProtectedContentPage.cs" />
+    <Compile Include="WebTests\Pages\ProtectedItemPage.cs" />
     <Compile Include="WebTests\Steps\PmiProtectedContentSteps.cs" />
     <Compile Include="WebTests\Features\PmiProtectedContent.feature.cs">
       <AutoGen>True</AutoGen>

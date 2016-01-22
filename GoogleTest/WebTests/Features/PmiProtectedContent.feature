@@ -13,3 +13,10 @@ Scenario: As a user, I should see a 403 message if I go to the protected item te
 	Given I am on the Pmi home page
 	When I go to the a protected item page
 	Then I should see a page with the message that Access is Denied
+
+Scenario: As a user, I should see a Abstract Content text, if I go to the protected content test page
+	Given I am on the Pmi home page
+	When I go to the a protected content page
+	Then I should see a page with a Abstract Content text
+	#The protected content on the test page has no text in refresh at this moment
+	#And I should not see the main protected content text

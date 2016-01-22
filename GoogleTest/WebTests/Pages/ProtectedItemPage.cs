@@ -8,11 +8,11 @@ using OpenQA.Selenium;
 
 namespace GoogleTest.WebTests.Pages
 {
-    public class ProtectedContentPage : BasePage
+    public class ProtectedItemPage : BasePage
     {
-        public ProtectedContentPage(IWebDriver driver)
-            : base(driver, typeof(ProtectedContentPage).Name){
-                _link = new Uri(SystemUnderTest.SiteUri + "/" + SystemUnderTest.ProtectedContentLink);
+        public ProtectedItemPage(IWebDriver driver)
+            : base(driver, typeof(ProtectedItemPage).Name){
+                _link = new Uri(SystemUnderTest.SiteUri + "/" + SystemUnderTest.ProtectedItemLink);
         }
 
         private Uri _link;
@@ -22,9 +22,9 @@ namespace GoogleTest.WebTests.Pages
             Driver.Navigate().GoToUrl(_link);
         }
 
-        internal bool CanSeeAbstract()
+        internal bool IsAccessDenied()
         {
-            return Driver.PageSource.Contains("Abstract Content");
+            return Driver.PageSource.Contains("Access Denied");
         }
     }
 
