@@ -27,7 +27,7 @@ namespace GoogleTest.WebTests.Steps
         {
             _chaptersPage.NavigateHere();
         }
-        
+
         [Then(@"I should see a page with following (.*)")]
         public void ThenIShouldSeeAPageWithFollowing(string widgets)
         {

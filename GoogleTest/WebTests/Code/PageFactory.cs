@@ -27,6 +27,11 @@ namespace GoogleTest.WebTests.Code
             return new HomePage(context.Driver);
         }
 
+        public static BasePage CreateBasePage(WebTestContext context)
+        {
+            return new BasePage(context.Driver);
+        }
+
         public static dynamic CreatePage(WebTestContext context, string pageType)
         {
 

@@ -44,5 +44,12 @@ namespace GoogleTest.WebTests.Pages
         {
             return Driver.PageSource.Contains("Page not found");
         }
+
+        //looks for widgets on the page by looking for the class name of the widget
+        internal bool CanSeeWidgets(string widget)
+        {
+            var w = Driver.FindElements(By.ClassName(widget));
+            return w.Count > 0;
+        }
     }
 }

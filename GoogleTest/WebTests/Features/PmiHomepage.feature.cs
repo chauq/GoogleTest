@@ -66,15 +66,16 @@ namespace GoogleTest.WebTests.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("As a user, I should see some body text")]
-        public virtual void AsAUserIShouldSeeSomeBodyText()
+        [NUnit.Framework.TestCaseAttribute("rte", null)]
+        public virtual void AsAUserIShouldSeeSomeBodyText(string widgets, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a user, I should see some body text", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a user, I should see some body text", exampleTags);
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
  testRunner.Given("I am on the Pmi home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
- testRunner.Then("I should get some body text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("I should see a page with following {0}", widgets), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

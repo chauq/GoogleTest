@@ -24,11 +24,13 @@ namespace GoogleTest.WebTests.Pages
 
 
         //looks for widgets on the page by looking for the class name of the widget
+        /* This method is in the Basepage now
         internal bool CanSeeWidgets(string widget)
         {
             var w = Driver.FindElements(By.ClassName(widget));
             return w.Count > 0;
         }
+        */
     }
 
 }

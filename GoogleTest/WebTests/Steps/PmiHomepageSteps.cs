@@ -20,11 +20,14 @@ namespace GoogleTest.WebTests.Steps {
 
         private WebTestContext _context = null;
         private HomePage _homePage = null;
-        
+
+        /*
+         * Using the CanSeeWidgets method instead
         [Then(@"I should get some body text")]
         public void ThenIShouldGetSomeBodyText()
         {
             Assert.IsTrue(_homePage.IsTextPresent());
         }
+        */
     }
 }
