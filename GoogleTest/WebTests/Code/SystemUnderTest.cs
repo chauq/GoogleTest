@@ -19,6 +19,7 @@ namespace GoogleTest.WebTests.Code{
         public static string SiteUri { get { return "http://pmi-refresh.durabledigital.com"; } }
         public static string ProtectedItemLink { get { return "protected-item-test"; } }
         public static string ProtectedContentLink { get { return "protected-Content-test"; } }
+        public static string ChaptersLink { get { return "membership/chapters"; } }
     }
 }
 
