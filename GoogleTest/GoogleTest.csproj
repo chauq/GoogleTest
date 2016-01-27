@@ -69,6 +69,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="WebTests\Code\SystemUnderTest.cs" />
+    <Compile Include="WebTests\Pages\ChaptersSearchPage.cs" />
     <Compile Include="WebTests\Pages\ChaptersPage.cs" />
     <Compile Include="WebTests\Pages\ProtectedContentPage.cs" />
     <Compile Include="WebTests\Pages\ProtectedItemPage.cs" />

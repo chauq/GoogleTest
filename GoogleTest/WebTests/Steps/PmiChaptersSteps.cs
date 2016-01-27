@@ -17,10 +17,12 @@ namespace GoogleTest.WebTests.Steps
         {
             _context = context;
             _chaptersPage = PageFactory.CreatePage(context, typeof(ChaptersPage).Name);
+            _chaptersSearchPage = PageFactory.CreatePage(context, typeof(ChaptersSearchPage).Name);
         }
 
         private WebTestContext _context;
         private ChaptersPage _chaptersPage;
+        private ChaptersSearchPage _chaptersSearchPage;
 
         [When(@"I go to the chapters page")]
         public void WhenIGoToTheChaptersPage()
@@ -33,5 +35,24 @@ namespace GoogleTest.WebTests.Steps
         {
             Assert.IsTrue(_chaptersPage.CanSeeWidgets(widgets));
         }
+
+        [Given(@"I am on the Chapter page")]
+        public void GivenIAmOnTheChapterPage()
+        {
+            _chaptersPage.NavigateHere();
+        }
+
+        [When(@"I search for ""(.*)""")]
+        public void WhenISearchFor(string searchTerm)
+        {
+            _chaptersSearchPage = _chaptersPage.SearchFor(searchTerm);
+        }
+
+        [Then(@"I should see results for ""(.*)""")]
+        public void ThenIShouldSeeResultsFor(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }

@@ -11,3 +11,10 @@ Scenario Outline: As a user, I should see a number of widgets if I go to the cha
 	| rte				|
 	| chapters-near     |
 	| chapters-search   |
+
+Scenario: As a User, I should be able to see and use the Chapter Search widget on the chapter page
+	Given I am on the Chapter page
+	When I search for "New york"
+	Then I should see results for "New york"
+
+

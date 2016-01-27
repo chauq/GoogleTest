@@ -31,6 +31,20 @@ namespace GoogleTest.WebTests.Pages
             return w.Count > 0;
         }
         */
-    }
 
+        public ChaptersSearchPage SearchFor(string searchTerm) {
+            var query = Driver.FindElement(By.Id("search-input"));
+            var searchButtonBy = Driver.FindElement(By.ClassName("input-group-btn"));
+            var searchButton = searchButtonBy.FindElement(By.CssSelector(".fa"));
+            var test = Driver.FindElement(By.CssSelector("[value]"));
+
+            Hilight(query);
+            query.Clear();
+            query.SendKeys(searchTerm);
+            Hilight(searchButtonBy);
+            Hilight(searchButton);
+            searchButton.Click();
+            return new ChaptersSearchPage(Driver);
+         }
+      }
 }
