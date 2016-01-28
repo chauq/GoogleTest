@@ -19,21 +19,20 @@ namespace GoogleTest.WebTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Pmi Chapters")]
-    public partial class PmiChaptersFeature
+    [NUnit.Framework.DescriptionAttribute("Pmi Certifications")]
+    public partial class PmiCertificationsFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "PmiChapters.feature"
+#line 1 "PmiCertifications.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Pmi Chapters", "\r\nAs a User I should be able to see and use the Chapter Search widget on the chap" +
-                    "ter page", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Pmi Certifications", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,40 +65,23 @@ namespace GoogleTest.WebTests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("As a user, if I go to the chapter page. I should see a number of widgets")]
+        [NUnit.Framework.DescriptionAttribute("As a user, I should go to the Certifications page and see some widgets")]
         [NUnit.Framework.TestCaseAttribute("rte", null)]
-        [NUnit.Framework.TestCaseAttribute("chapters-near", null)]
-        [NUnit.Framework.TestCaseAttribute("chapters-search", null)]
-        public virtual void AsAUserIfIGoToTheChapterPage_IShouldSeeANumberOfWidgets(string widgets, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("notification", null)]
+        [NUnit.Framework.TestCaseAttribute("image-caption", null)]
+        [NUnit.Framework.TestCaseAttribute("no-margin", null)]
+        [NUnit.Framework.TestCaseAttribute("faq", null)]
+        public virtual void AsAUserIShouldGoToTheCertificationsPageAndSeeSomeWidgets(string widgets, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a user, if I go to the chapter page. I should see a number of widgets", exampleTags);
-#line 5
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a user, I should go to the Certifications page and see some widgets", exampleTags);
+#line 3
 this.ScenarioSetup(scenarioInfo);
-#line 6
+#line 4
  testRunner.Given("I am on the Pmi home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 7
- testRunner.When("I go to the chapters page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 8
+#line 5
+ testRunner.When("I click on the main navbar link \"Certifications\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 6
  testRunner.Then(string.Format("I should see a page with following {0}", widgets), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("As a User, I should be able to see and use the Chapter Search widget on the chapt" +
-            "er page")]
-        public virtual void AsAUserIShouldBeAbleToSeeAndUseTheChapterSearchWidgetOnTheChapterPage()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a User, I should be able to see and use the Chapter Search widget on the chapt" +
-                    "er page", ((string[])(null)));
-#line 15
-this.ScenarioSetup(scenarioInfo);
-#line 16
- testRunner.Given("I am on the Chapter page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 17
- testRunner.When("I search for \"New york\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 18
- testRunner.Then("I should see results for \"New york\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

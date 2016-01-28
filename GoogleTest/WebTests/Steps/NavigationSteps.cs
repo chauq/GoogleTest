@@ -16,8 +16,8 @@ namespace GoogleTest.WebTests.Steps
 
         public NavigationSteps(WebTestContext context)
         {
-            _context = context;
             _homePage = PageFactory.CreateHomePage(context);
+            _context = context;
         }
 
         private WebTestContext _context = null;
@@ -35,6 +35,12 @@ namespace GoogleTest.WebTests.Steps
         public void WhenIGoToTheUrl(string url)
         {
             _homePage.Driver.Navigate().GoToUrl("http://pmi-refresh.durabledigital.com/" + uri);
+        }
+
+        [When(@"I click on the main navbar link ""(.*)""")]
+        public void WhenIClickOnTheMainNavigationBarLink(NavigationBarLink mainLink)
+        {
+            _homePage.ClickLinkInHeader(mainLink.ToString());
         }
     }
 }

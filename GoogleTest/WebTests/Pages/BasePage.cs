@@ -1,9 +1,14 @@
 ﻿using GoogleTest.WebTests.Code;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Configuration;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
@@ -51,5 +56,22 @@ namespace GoogleTest.WebTests.Pages
             var w = Driver.FindElements(By.ClassName(widget));
             return w.Count > 0;
         }
+
+        internal void ClickLinkInHeader(string linkText)
+        {
+            ClickLinkByText(linkText.ToLowerInvariant());
+        }
+
+        internal void ClickLinkByText(string linkText)
+        {
+            var links = Driver.FindElement(By.LinkText(linkText.First().ToString().ToUpper() + linkText.Substring(1)));
+
+            if (links == null)
+                links = Driver.FindElement(By.LinkText(linkText.First().ToString().ToUpper() + linkText.Substring(1)));
+
+            links.Click();
+        }
+
+
     }
 }

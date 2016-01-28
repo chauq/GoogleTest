@@ -68,7 +68,19 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="WebTests\Pages\TestimonialsPage.cs" />
+    <Compile Include="WebTests\Steps\PmiTestimonialsSteps.cs" />
     <Compile Include="WebTests\Code\SystemUnderTest.cs" />
+    <Compile Include="WebTests\Features\PmiTestimonials.feature.cs">
+      <DependentUpon>PmiTestimonials.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="WebTests\Features\PmiCertifications.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PmiCertifications.feature</DependentUpon>
+    </Compile>
     <Compile Include="WebTests\Pages\ChaptersSearchPage.cs" />
     <Compile Include="WebTests\Pages\ChaptersPage.cs" />
     <Compile Include="WebTests\Pages\ProtectedContentPage.cs" />
@@ -125,6 +137,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PageObject.feature.cs</LastGenOutput>
     </None>
+    <None Include="WebTests\Features\PmiTestimonials.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PmiTestimonials.feature.cs</LastGenOutput>
+    </None>
     <None Include="WebTests\Features\PmiHomepage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PmiHomepage.feature.cs</LastGenOutput>
@@ -136,6 +152,10 @@
     <None Include="WebTests\Features\PmiChapters.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PmiChapters.feature.cs</LastGenOutput>
+    </None>
+    <None Include="WebTests\Features\PmiCertifications.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PmiCertifications.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -2,7 +2,7 @@
 	
 	As a User I should be able to see and use the Chapter Search widget on the chapter page
 
-Scenario Outline: As a user, I should see a number of widgets if I go to the chapter page
+Scenario Outline: As a user, if I go to the chapter page. I should see a number of widgets
 	Given I am on the Pmi home page
 	When I go to the chapters page
 	Then I should see a page with following <widgets>
